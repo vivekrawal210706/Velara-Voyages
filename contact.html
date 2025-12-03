@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Velara Voyages</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Velara<span>Voyages</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html#destinations" class="btn" style="padding: 8px 20px; font-size: 0.8rem;">Packages</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container contact-section">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your adventure? Fill out the form below or visit our HQ.</p>
+            </div>
+
+            <div class="contact-box">
+                <!-- Left Side -->
+                <div class="contact-left">
+                    <h3 style="color: white; margin-bottom: 30px;">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Head Office</h4>
+                            <p>102, Titanium Heights, Prahlad Nagar,<br>Ahmedabad, Gujarat 380015, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210 (India)<br>+1 234 567 8900 (Global)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>bookings@velaravoyages.com<br>support@velaravoyages.com</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h4 style="color:white; margin-bottom: 15px;">Follow Us</h4>
+                        <div class="social-row">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="contact-right">
+                    <h3 style="margin-bottom: 30px; color: var(--primary);">Send us a Message</h3>
+                    <form onsubmit="event.preventDefault(); alert('Message Sent! We will contact you shortly.');">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Interest</label>
+                            <select class="form-control">
+                                <option>General Inquiry</option>
+                                <option>Book a Trip</option>
+                                <option>Visa Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your plans..."></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Velara<span>Voyages</span></h3>
+                    <p>Your trusted partner for exploring the world. We provide top-notch travel services for leisure and business travelers worldwide.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Flight Booking</a></li>
+                        <li><a href="#">Hotel Reservations</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for latest travel updates and exclusive offers.</p>
+                    <input type="email" placeholder="Your Email" style="padding: 10px; width: 100%; border: none; border-radius: 5px; margin-bottom: 10px;">
+                    <button class="btn" style="padding: 8px 20px; font-size: 0.8rem; width: 100%;">Subscribe</button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Velara Voyages Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
