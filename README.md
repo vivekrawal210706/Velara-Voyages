@@ -2,8 +2,6 @@
 
 A fully responsive travel website built using HTML5 and CSS3. This project was developed as part of the Web Technology coursework to demonstrate proficiency in frontend web development, layout design, and semantic HTML.
 
-[🚀 Click Here To View Live Website]("https://vivekrawal210706.github.io/Velara-Voyages/")
-
 📝 Project Details
 
 Project: Velara Voyages
