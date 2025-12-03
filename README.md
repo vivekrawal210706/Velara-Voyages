@@ -1,33 +1,54 @@
-Velara Voyages 🌍
+✈️ Velara Voyages - Travel Website
 
-Velara Voyages is a modern, responsive travel agency website designed to showcase premium travel packages to destinations like Tokyo, Thailand, and New York.
+A fully responsive travel website built using HTML5 and CSS3. This project was developed as part of the Web Technology coursework to demonstrate proficiency in frontend web development, layout design, and semantic HTML.
 
-🚀 View Live Website
+🚀 View Live Website()
 
-About The Project
+📝 Project Details
 
-This project was built to demonstrate core competencies in raw HTML5 and CSS3 without relying on frameworks like Bootstrap. The goal was to create a clean, semantic, and accessible user interface that looks great on any device.
+Project: Velara Voyages
 
-Features
+Student Name: Vivek Rawal
 
-Hero Section: Immersive background with call-to-action buttons.
+University: JG University
 
-Destination Gallery: CSS Grid layout displaying top travel spots.
+Roll Number: 241205
 
-About Section: informative layout with mission/vision statements.
+Subject: Web Technology
 
-Contact Page: Integrated form UI and glass-morphism style details.
+Guided By: Prof. Sharad Patidar
 
-Mobile Responsive: detailed media queries for phone screens (<768px).
+✨ Key Features
 
-Tech Stack
+Responsive Design: Fully adaptable layout that works on Desktops, Tablets, and Mobile phones.
 
-HTML5
+Multi-Page Structure: Includes Home, About Us, and Contact pages linked together.
 
-CSS3 (Flexbox & Grid)
+Modern UI/UX: Uses a professional color palette (Navy Blue & Coral) with Google Fonts (Poppins & Playfair Display).
 
-Git & GitHub Pages
+CSS Grid & Flexbox: Used for aligning destination cards and service sections.
 
-License
+Interactive Elements: Hover effects on buttons, navigation links, and destination cards.
 
-This project is for educational purposes.
+Contact Form UI: A styled contact form with location details.
+
+🛠️ Technologies Used
+
+HTML5: Semantic structure.
+
+CSS3: Styling, Animations, and Layouts.
+
+Font Awesome: For social media and UI icons.
+
+Google Fonts: Typography.
+
+🚀 How to Run Locally
+
+Clone this repository.
+
+Open the folder Travel-Website-Project.
+
+Double-click index.html to open it in your web browser.
+
+
+
