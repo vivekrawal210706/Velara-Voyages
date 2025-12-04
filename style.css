@@ -101,6 +101,20 @@ img { max-width: 100%; display: block; }
 }
 .nav-links a:hover::after { width: 100%; }
 
+/* --- HAMBURGER MENU SETUP (No Script Version) --- */
+/* 1. Hide the checkbox completely */
+#nav-toggle {
+    display: none;
+}
+
+/* 2. Style the label (the icon) */
+.hamburger {
+    display: none; /* Hidden on Desktop */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
 /* --- PAGE CONTENT WRAPPER --- */
 .page-content { 
     padding-top: 80px; /* Matches Desktop Navbar Height */
@@ -429,47 +443,44 @@ footer {
    RESPONSIVE FIXES (PHONES & TABLETS)
 ========================================= */
 @media (max-width: 768px) {
-    /* 1. Make Navbar taller to fit stacked links */
-    .navbar {
-        height: auto;
-        padding: 20px 0;
-        position: absolute; /* Changed from fixed to absolute for better mobile scrolling behavior if needed, or keep fixed but ensure scroll */
-        position: fixed;
-    }
-
-    /* 2. Stack Logo and Menu Links Vertically */
-    .nav-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /* 3. SHOW the menu links and style them for touch */
-    .nav-links {
-        display: flex;  /* Visible now! */
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        gap: 15px;
-    }
-
-    /* 4. Make links easier to tap */
-    .nav-links a {
+    /* Show Hamburger (Label) */
+    .hamburger {
         display: block;
-        padding: 5px 0;
-        font-size: 1.1rem;
     }
 
-    /* 5. Push page content down so it doesn't hide behind the taller menu */
+    .navbar {
+        height: 70px;
+        padding: 0;
+    }
+
+    /* Hide Links by default */
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    /* THE CSS MAGIC: 
+       When the hidden checkbox (#nav-toggle) is CHECKED, 
+       find the SIBLING class .nav-links and display it.
+    */
+    #nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
     .page-content {
-        padding-top: 240px; /* Increased top padding significantly for mobile */
+        padding-top: 70px;
     }
 
-    /* Other Mobile Adjustments */
     .hero h1 { font-size: 2.2rem; }
     .story-block { flex-direction: column; }
-    .story-img { width: 100%; margin-bottom: 20px; }
     .contact-box { flex-direction: column; }
-    
-    /* Ensure footer grids stack nicely */
-    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .footer-grid { grid-template-columns: 1fr; }
 }
